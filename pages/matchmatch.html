@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roc Carnival</title>
+    <link rel='stylesheet' href='../assets/css/matchmatch.css'>
+    <link rel='stylesheet' href='../assets/css/styleUtilities.css'>
+
+
+    <audio id="clip1">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source>
+    </audio>
+    <audio id="clip2">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source>
+    </audio>
+    <audio id="clip3">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source>
+    </audio>
+    <audio id="clip4">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source>
+    </audio>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+    <script src='../assets/js/database.js'></script>
+</head>
+<body onload='loadPage()'>
+
+    <header id='header' class=''>
+        <h1 id='username' class=''></h1>
+        <div id='marble-status' class=''>
+            <div class='marble-icon-wrapper'>
+                <img id='marble-icon' class='' src='../assets/images/marblesIcon.png'>
+            </div>
+            <p id='marble-amount' class=''></p>
+        </div>
+        <div class='home-button-wrapper'><a href='./carnival.html' class='icon solids fa-home'></a></div>
+        <div class='home-button-wrapper'><a onclick='logout()' class='icon solids fa-power-off'></a></div>
+        
+    </header>
+    <article>
+
+        <div class='game-container'>
+
+            <div id='gameMenu' class='trivia-wrapper'>
+                <div id='main-content' class=''>
+                    <div class='block-wrapper'>
+                        <button id='redBlock' class='block'></button>
+                        <button id='greenBlock' class='block'></button>
+                        <button id='blueBlock' class='block'></button>
+                        <button id='yellowBlock' class='block'></button>
+                    </div>
+                    <button id='startButton' class='ingame-button'>START</button>
+
+                </div> <!-- Main content wrapper-->
+
+                <div class='status-bar'>
+
+                    <div id='points-container' class='status-container'>
+                        <div class='img-wrapper'>
+                            <p id="points-icon" class='icon solids fa-thumbs-up status-icon'></p>
+                        </div> <!-- image wrapper-->
+
+                        <div class='text-wrapper'>
+                            <p id='points-text'> x0</p>
+                        </div> <!-- text wrapper-->
+                    </div> <!-- Points container -->
+
+                    
+                </div> <!-- status bar! -->
+            </div> <!-- Game menu content wrapper -->
+            
+
+            <div id='mainMenu' class='trivia-wrapper'>
+                <div class='menu-wrapper'>
+                    <div class='image-wrapper'>
+                        <img src='../assets/images/matchmatch_icon.png'>
+                    </div>
+                    <h1> Match Match!</h1>
+                    <div class='button-container'>
+                        <button id='playButton' class='button-design'>PLAY</button>
+                        <button id='instructionsButton' class='button-design'>INSTRUCTIONS</button>
+                    </div>
+                </div>
+
+            </div> <!-- Trivia wrapper -->
+        </div> <!-- game container -->
+
+    </article>
+
+    <article id='carnival-footer'>
+
+        <div class='footer-content'>
+            <h1> How To Play</h1>
+            <div class='instructions-container'>
+                <p class='instructions-text'>
+                    Press start and match the sequence of flashing blocks.<br>
+                    Earn a marble each time you get the sequence right!<br>
+                    Good luck!
+                </p>
+            </div>
+        </div>
+
+        <div class='catchphrase'>
+            <div class='image-wrapper'>
+                <img src='../assets/images/rsIcon.png'>
+            </div>
+            <p> Always be kind.<br>
+                Always be honest.<br>
+                Always be consistent.
+            </p>
+        </div>
+
+    </article>
+
+    <script src='../assets/js/carnivalUtilities.js'></script>
+    <script src='../assets/js/matchmatch.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+</body>
+</html>

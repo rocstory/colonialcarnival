@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|VT323|Nanum+Gothic+Coding|Karma|Righteous|Play|Press+Start+2P|Rasa');
+@import url("fontawesome-all.min.css");
+
+.show
+{
+    border: 1px solid red !important;
+}
+.show2
+{
+    border: 1px solid black !important;
+}
+.show3
+{
+    border: 1px solid green !important;
+}
+
+body
+{
+    background: #FA4C05; /* #0fbaf2;*/
+    padding: 0px;
+    margin: 0px;
+    font-family:"Baloo Bhai", "VT323",Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    
+}
+
+#logo
+{
+    position: relative;
+    width: 10%;
+    height: 10%;
+    margin: auto;
+    top: 8em;
+    left: 9em;
+    z-index: -1;
+    transform: rotate(-15deg);
+}
+
+.main-div
+{
+    width: 20%;
+    margin: 0px auto;
+    margin-top: 150px;
+    padding: 20px;
+}
+    .main-div h3
+    {
+        text-align: center;
+        font-size: 1em;
+        color: white; /*#072B5B; /*#ffc125;*/
+        text-shadow: 3px 3px 9px #000;
+    }
+    .main-div input
+    {
+        display: block;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background: #fff;
+        padding: 15px;
+        outline: none;
+        width: 100%;
+        margin-bottom: 20px;
+        transition: 0.3s;
+    }
+        .main-div input:focus
+        {
+            border: 1px solid #777;
+            background-color: #ffc125;
+        }
+    .main-div button
+    {
+        background: #fff;
+        color: #000;
+        border: 1px solid #000; 
+        border-radius: 5px;
+        padding: 15px;
+        display: block;
+        width: 100%;
+        transition: 0.3s;
+    }
+        .main-div button:hover
+        {
+            background-color: #ffc125;
+            color: #000;
+            border: 1px solid #634c13;
+            cursor: pointer;
+        }
+
+.error-message
+{
+    display: none;
+    width: 30%;
+    margin: 0px auto;
+    margin-top: 0px;
+    padding: 20px;
+    border: 3px solid black !important;
+    border-radius: 6%;
+    background-color: red;
+    transition: 0.5s;
+}
+    #error-text
+    {
+        text-align: center;
+        font-size: 1.2em;
+        color: white;
+        text-shadow: 2px 2px black;
+
+    }
+
+
+
+
+@media screen and (max-width: 2560px) and (min-width: 1401px)
+{
+    .main-div
+    {
+        width: 40%;
+    }
+        .main-div h3
+        {
+            font-size: 4em;
+        }
+        .main-div input
+        {
+            font-size: 3em;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            height: 10%;
+        }
+        .main-div button
+        {
+
+            font-size: 3em;
+            margin: auto;
+            width: 50%;
+            height: 20%;
+        }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1025px)
+{
+    .main-div
+    {
+        width: 40%;
+    }
+        .main-div h3
+        {
+            font-size: 3em;
+        }
+        .main-div input
+        {
+            width: 90%;
+            font-size: 1.5em;
+        }
+        .main-div button
+        {
+            font-size: 1.2em;
+            width: 22.8em;
+        }
+        #logo
+        {
+            top: 4em;
+            left: 2.3em;
+        }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px)
+{
+    .main-div
+    {
+        width: 30%;
+    }
+        .main-div h3
+        {
+            font-size: 2em;
+        }
+        .main-div input
+        {
+            width: 90%;
+        }
+        #logo
+        {
+            top: 4em;
+            left: 2.8em;
+        }
+    
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px)
+{
+    .main-div
+    {
+        width: 40%;
+    }
+        .main-div h3
+        {
+            font-size: 2em;
+        }
+        .main-div input
+        {
+            width: 90%;
+        }
+
+        #logo
+        {
+            top: 4em;
+            left: 2.7em;
+        }
+    
+}
+
+@media screen and (max-width: 425px) and (min-width: 400px)
+{
+    .main-div
+    {
+        width: 70%;
+    }
+        .main-div h3
+        {
+            font-size: 2em;
+        }
+        .main-div input
+        {
+            width: 90%;
+        }
+
+        #logo
+        {
+            top: 4em;
+            left: 2.2em;
+        }
+}
+
+@media screen and (max-width: 399px) and (min-width: 100px)
+{
+    .main-div
+    {
+        width: 80%;
+    }
+        .main-div h3
+        {
+            font-size: 2em;
+        }
+        .main-div input
+        {
+            width: 90%;
+        }
+        #logo
+        {
+            top: 4em;
+            left: 1.2em;
+        }
+
+}
+
+
+
+
+
+
+.show-r
+{
+    border: 1px solid red !important;
+}
+.show-w
+{
+    border: 1px solid white !important;
+}
+.show-g
+{
+    border: 1px solid green !important;
+}
+.show-b
+{
+    border: 1px solid blue !important;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+body
+{
+    background: #fff;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+}
+
+input, button
+{
+    font-family: sans-serif;
+}
+
+.main-div, .loggedin-div
+{
+    width: 25%;
+    margin: 0px auto;
+    margin-top: 150px;
+    padding: 20px;
+}
+
+
+.main-div input
+{
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.main-div button, .loggedin-div button 
+{
+    background: #5d8ffc;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    padding: 15px;
+    display: block;
+    width: 100%;
+
+}
+
+*/

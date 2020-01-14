@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai');
+
+
+/*
+    Blurb styling sheet.
+*/
+.blurb
+{
+    
+    border: 4px solid #000;
+    margin: 10px;
+    position: relative;
+    width: 35%;
+    height: 25em;
+    display: inline-block;
+    background-color: #072B53;
+
+}
+        .blurb, .blurb-button, .blurb-content
+        {
+            border-radius: 2%;
+        }
+
+        .blurb-button, .blurb-content
+        {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .blurb-button
+        {
+            border: transparent;
+            background-color: transparent;
+            z-index: 1;
+        }
+            .blurb-button:hover
+            {
+                background-color: rgba(0,0,0,0.5);
+                cursor: pointer;
+            }
+
+        .blurb-images
+        {
+            position: relative;
+            top: 0;
+            height: 0;
+            width: 100%;
+            height: 70%;
+
+            border-top-left-radius: 2%;
+            border-top-right-radius: 2%;
+            overflow: hidden;
+        }
+
+            .blurb-images img
+            {   
+                display: block; /* Block - none */ 
+                width: 100%;
+                height: 100%;
+                
+            }
+            .blurb-images img:hover
+            {
+                cursor: pointer;
+            }
+
+        .blurb-body
+        {   
+            position: relative;
+            top: 0.0em;
+            left: 0em;
+
+            width: 100%; 
+            height: 3.9em; 
+            line-height: 0;
+        }
+            .blurb-body h3
+            {
+                text-align: center;
+            }
+                .blurb-body h3 strong
+                {
+                    font-family: 'Baloo Bhai', sans-serif, tahoma;
+                    color: #fff;/*#ffc125; */
+                    text-shadow: 2px 2px black;
+                }
+
+            .blurb-body p
+            {
+                text-align: center;
+                line-height: 1.5em;
+                color: #fff;
+            }
+        .blurb-footer > div
+        {
+            position: relative;
+            display: inline-block;
+            margin: 0.25em;
+            top: 0;
+            padding-left: 0;
+            width: 0em;
+        }
+            .blurb-footer > div > a
+            {
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                border-radius: 6px;
+                top: 0;
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+
+                .blurb-footer > div > a:before
+                {
+                    -moz-transition: background-color .2s ease-in-out;
+                    -webkit-transition: background-color .2s ease-in-out;
+                    -ms-transition: background-color .2s ease-in-out;
+                    transition: background-color .2s ease-in-out;
+
+                    background-color: #fff;
+                    border-radius: 6px;
+                    color: #2e2e2e !important;
+                    display: block;
+
+                    font-size: 29px;
+                    height: 32px;
+                    width: 38px;
+
+                    line-height: 32px;
+                    text-align: center;
+                    outline: 0;
+                    overflow: hidden;
+                }
+
+                .blurb-footer > div > a:hover
+                {
+                    top: -5px;
+                }
+                    .blurb-footer > div > a:hover:before
+                    {
+                        background-color: #FA4C05;
+                    }
+
+@media screen and (max-width: 2560px) and (min-width: 1401px)
+{
+    .blurb
+    {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1025px)
+{
+    .blurb
+    {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px)
+{
+    .blurb
+    {
+        width: 40%;
+    }
+    
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px)
+{
+    .blurb
+    {
+        width: 40%;
+    }
+    
+}
+
+@media screen and (max-width: 425px) and (min-width: 400px)
+{
+    .blurb
+    {
+        width: 90%;
+    }
+            .blurb-body h3
+            {
+                
+                font-size: 1.5em;
+            }
+
+            .blurb-body > p
+            {
+                overflow: hidden;
+            }
+}
+
+@media screen and (max-width: 399px) and (min-width: 100px)
+{
+    .blurb
+    {
+        width: 90%;
+    }
+            .blurb-body h3
+            {
+                
+                font-size: 1.5em;
+            }
+
+            .blurb-body > p
+            {
+                overflow: hidden;
+            }
+
+}
+
+                    

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roc Carnival</title>
+    <link rel='stylesheet' href='../assets/css/home_page.css'>
+    <link rel='stylesheet' href='../assets/css/blurbStyle.css'>
+    <link rel='stylesheet' href='../assets/css/styleUtilities.css'>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+    <script src='../assets/js/database.js'></script>
+</head>
+<body onload='loadPage()'>
+
+    <header id='header' >
+        <h1 id='username' ></h1>
+        <div id='marble-status' >
+            <div class='marble-icon-wrapper '>
+                <img id='marble-icon' src='../assets/images/marblesIcon.png'>
+            </div>
+            <p id='marble-amount'></p>
+        </div>
+        <div class='home-button-wrapper '><a href='./carnival.html' class='icon solids fa-home '></a></div>
+        <div class='home-button-wrapper'><a onclick='logout()' class='icon solids fa-power-off'></a></div>
+        
+    </header>
+
+    <article>
+
+        <div class='blurb'>
+            <div id='WesternTrivia' class='blurb-content'>
+                <div class='blurb-images'>
+                    <img id='WesternTrivia_img' src='../assets/images/wcsuLogo.png'>
+                </div>
+                <div class='blurb-body'>
+                    <h3 class=''> <strong> WCSU Trivia </strong></h3>
+                    <p class=''>Test your knowledge of WCSU!</p>
+                </div> <!-- blurb body-->
+                <footer class='blurb-footer'>
+                    <div ><a href="./wcsuTrivia.html" class="icon solids fa-gamepad"> <span class="label">Game</span> </a></div>
+                </footer>
+            </div> <!-- blurb content -->
+        </div> <!-- Blurb container-->
+
+        <div class='blurb'>
+            <div id='MatchMatch' class='blurb-content'>
+                <div class='blurb-images'>
+                    <img id='MatchMatch_img' src='../assets/images/matchmatch_icon.png'>
+                </div>
+                <div class='blurb-body'>
+                    <h3 class=''> <strong> Match Match </strong></h3>
+                    <p class=''>How good is your memory?</p>
+                </div> <!-- blurb body-->
+                <footer class='blurb-footer'>
+                    <div ><a href="./matchmatch.html" class="icon solids fa-gamepad"> <span class="label">Game</span> </a></div>
+                </footer>
+            </div> <!-- blurb content -->
+        </div> <!-- Blurb container-->
+
+        <div class='blurb'>
+            <div id='rps' class='blurb-content'>
+                <div class='blurb-images'>
+                    <img id='rps_img' src='../assets/images/rpslogo.png'>
+                </div>
+                <div class='blurb-body'>
+                    <h3 class=''> <strong>Rock Paper Scissors</strong></h3>
+                    <p class=''>Beat Chuck in Rock Paper Scissors!</p>
+                </div> <!-- blurb body-->
+                <footer class='blurb-footer'>
+                    <div ><a href="./rps.html" class="icon solids fa-gamepad"> <span class="label">Game</span> </a></div>
+                </footer>
+            </div> <!-- blurb content -->
+        </div> <!-- Blurb container-->
+
+
+    </article>
+
+    <article id='carnival-footer'>
+
+        <div class='footer-content'>
+            <h1 id='footer-name'>Hi, </h1>
+            <h1>Welcome to Colonial Carnival!</h1>
+            <div class='instructions-container'>
+                <p class='instructions-text'>
+                    Play one of <strong>Colonial Carnival</strong>'s various games to earn <strong>marbles</strong>!<br>
+                    Spend your earned marbles on the items listed below! 
+                    <br>** Items may change throughout the semester **
+                </p>
+            </div>
+        </div>
+
+
+        <div id='table-wrapper'>
+            <table class='table-design'>
+                <tr>
+                  <th>Item</th>
+                  <th>Marble Amount</th>
+                </tr>
+                <tr>
+                  <td>Gift card raffle ticket</td>
+                  <td>75</td>
+                </tr>
+                <tr>
+                  <td>Pinney Dollar</td>
+                  <td>100</td>
+                </tr>
+              </table>
+        </div>
+
+        <div class='catchphrase'>
+            <div class='image-wrapper'>
+                <img src='../assets/images/rsIcon.png'>
+            </div>
+            <p> Always be kind.<br>
+                Always be honest.<br>
+                Always be consistent.
+            </p>
+        </div>
+
+        <div class='user-settings'>
+            <h1> <strong>Change name</strong></h1>
+            <p>Use the updated name to login to your account.</p>
+            <div class='updateName-wrapper'>
+                <input type='updated_name' placeholder='Updated name...' id='newName' />
+                <button id='updateButton'>UPDATE</button>
+            </div>
+            <p id='updateErrorMessage'>New name is not valid.</p>
+            <p>
+                Updated name must not contain numbers or special characters.
+                <br>New name will be used to log into your account on the next run.
+            </p>
+        </div>
+
+
+    </article>
+
+
+    <script src='../assets/js/carnivalUtilities.js'></script>
+    <script src='../assets/js/carnival.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+    
+</body>
+</html>

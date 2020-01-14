@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roc Carnival</title>
+    <link rel='stylesheet' href='../assets/css/wcsuTrivia.css'>
+    <link rel='stylesheet' href='../assets/css/styleUtilities.css'>
+    <audio id="correctClip">
+        <source src="../assets/audio/correct.mp3"></source>
+    </audio>
+    <audio id="wrongClip">
+        <source src="../assets/audio/incorrect.mp3"></source>
+    </audio>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+    <script src='../assets/js/database.js'></script>
+</head>
+<body onload='loadPage()'>
+
+    <header id='header' class=''>
+        <h1 id='username' class=''></h1>
+        <div id='marble-status' class=''>
+            <div class='marble-icon-wrapper'>
+                <img id='marble-icon' class='' src='../assets/images/marblesIcon.png'>
+            </div>
+            <p id='marble-amount' class=''></p>
+        </div>
+        <div class='home-button-wrapper'><a href='./carnival.html' class='icon solids fa-home'></a></div>
+        <div class='home-button-wrapper'><a onclick='logout()' class='icon solids fa-power-off'></a></div>
+        
+    </header>
+    <article>
+
+        <div class='game-container'>
+
+            <div id='gameMenu' class='trivia-wrapper'>
+                <div id='main-content'>
+
+                    <div id='trivia' class=''>
+
+                        <div id='question-container' class=''>
+                            <h1 id='question'>Question</h1>
+                        </div>
+    
+                        <div id='choices-container' class=''>
+                            <form id='choices' class=''>
+                                <div id='input-wrapper' class=''>
+                                    <input type='radio' name="choice" id='c1' value='choiceA' class='question-input' /> <label for ='c1' id='l1' class='input-label'>choice A</label><br>
+                                    <input type='radio' name="choice" id='c2' value='choiceB' class='question-input'/> <label for ='c2' id='l2' class='input-label'>choice B</label><br>
+                                    <input type='radio' name="choice" id='c3' value='choiceB' class='question-input'/> <label for ='c3' id='l3' class='input-label'>choice C</label><br>
+                                    <input type='radio' name="choice" id='c4' value='choiceB' class='question-input'/> <label for ='c4' id='l4' class='input-label'>choclass='question-input'iclass='question-input'ceclass='question-input' D</label><br>
+                                </div>
+                            </form>
+                        </div> <!-- choices container-->
+
+
+                    </div> <!-- Trivia div-->
+                    <div class='trivia-button-wrapper'>
+                        <button id='submitButton' class='button-design trivia-button' onclick='submitAnswer()'>SUBMIT</button>
+                        <button id='nextButton' class='button-design trivia-button' onclick='NEXT_QUESTION()'>NEXT</button>
+                        <button id='playButton2' class='button-design trivia-button' onclick='startGame()'>Play</button>
+                        <button id='homeButton' class='button-design trivia-button'>Home</button>
+
+                    </div>
+                    
+                </div> <!-- Main content wrapper-->
+
+                <div class='status-bar'>
+
+                    <div id='points-container' class='status-container'>
+                        <div class='img-wrapper'>
+                            <p id="points-icon" class='icon solids fa-thumbs-up status-icon'></p>
+                        </div> <!-- image wrapper-->
+
+                        <div class='text-wrapper'>
+                            <p id='points-text'> x0</p>
+                        </div> <!-- text wrapper-->
+                    </div> <!-- Points container -->
+
+                    <div id='attempts-container' class='status-container'>
+                        <div class='img-wrapper'>
+                            <p id="attempts-icon" class='icon solids fa-heartbeat status-icon'></p>
+                        </div> <!-- img-wrapper-->
+
+                        <div class='text-wrapper'>
+                            <p id='attempts-text'>x3</p>
+                        </div> <!-- text-wrapper -->
+                    </div><!-- Attempts container-->
+                </div> <!-- status bar! -->
+            </div> <!-- Game menu content wrapper -->
+            
+
+            <div id='mainMenu' class='trivia-wrapper'>
+                <div class='menu-wrapper'>
+                    <div class='image-wrapper'>
+                        <img src='../assets/images/wcsuLogo.png'>
+                    </div>
+                    <h1> WCSU Trivia!</h1>
+                    <div class='button-container'>
+                        <button id='playButton' class='button-design' onclick='startGame()'>PLAY</button>
+                        <button id='instructionsButton' class='button-design'>INSTRUCTIONs</button>
+                    </div>
+                    <!--
+                    <button id='playButton' class='button-design'>PLAY</button>
+                    <button id='instructionsButton' class='button-design'>INSTRUCTIONs</button>
+                    -->
+                </div>
+
+            </div> <!-- Trivia wrapper -->
+        </div> <!-- game container -->
+
+    </article>
+
+    <article id='carnival-footer'>
+
+        <div class='footer-content'>
+            <h1> How To Play </h1>
+            <div class='instructions-container'>
+                <p class='instructions-text'>
+                    Answer each question displayed. <br>
+                    For each question you get right, you will earn a marble.<br>
+                    Answer carefully, you will only have three attempts!
+                </p>
+            </div>
+        </div>
+
+        <div class='catchphrase'>
+            <div class='image-wrapper'>
+                <img src='../assets/images/rsIcon.png'>
+            </div>
+            <p> Always be kind.<br>
+                Always be honest.<br>
+                Always be consistent.
+            </p>
+        </div>
+
+    </article>
+
+    <script src='../assets/js/carnivalUtilities.js'></script>
+    <script src='../assets/js/wcsuTrivia.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+</body>
+</html>

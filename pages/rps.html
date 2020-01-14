@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roc Carnival</title>
+    <link rel='stylesheet' href='../assets/css/rps.css'>
+    <link rel='stylesheet' href='../assets/css/styleUtilities.css'>
+
+    <audio id="correctClip">
+        <source src="../assets/audio/correct.mp3"></source>
+    </audio>
+    <audio id="wrongClip">
+        <source src="../assets/audio/incorrect.mp3"></source>
+    </audio>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+    <script src='../assets/js/database.js'></script>
+</head>
+<body onload='loadPage()'>
+
+    <header id='header' class=''>
+        <h1 id='username' class=''></h1>
+        <div id='marble-status' class=''>
+            <div class='marble-icon-wrapper'>
+                <img id='marble-icon' class='' src='../assets/images/marblesIcon.png'>
+            </div>
+            <p id='marble-amount' class=''></p>
+        </div>
+        <div class='home-button-wrapper'><a href='./carnival.html' class='icon solids fa-home'></a></div>
+        <div class='home-button-wrapper'><a onclick='logout()' class='icon solids fa-power-off'></a></div>
+        
+    </header>
+    <article>
+        <div class='game-container'>
+
+            <div id='gameMenu' class='trivia-wrapper'>
+                <div id='main-content' class=''>
+                    <div class="points-container">
+                        <table class='table-design'>
+                            <tr>
+                                <th id='player'>You</th>
+                                <th id='chuck'>Chuck</th>
+                            </tr>
+                            <tr>
+                                <td id='player-points'>0</td>
+                                <td id='chuck-points'>0</td>
+                            </tr>
+                        </table>
+                    </div><!-- Points container-->
+                    <div class='choice-container'>
+                        <table class='selection-design '>
+                            <tr>
+                                <th id='player-name'>You</th>
+                                <th id='chuck-name'>Chuck</th>
+                            </tr>
+                            <tr>
+                                <td id='player-choice' class='choices'><p id='pText' class=''></p></td>
+                                <td id='chuck-choice' class='choices'><p id='cText' class=''></p></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id='rpsContainer' class='rpsButton-container '>
+                        <button id='rock' class='rpsButton icon solids fa-hand-rock'></button>
+                        <button id='paper' class='rpsButton icon solids fa-hand-paper'></button>
+                        <button id='scissors' class='rpsButton icon solids fa-hand-scissors'></button>
+                    </div>
+                    <div id='navContainer' class='rpsButton-container '>
+                        <button id='play2' class='rpsButton '>PLAY</button>
+                        <button id='home2' class='rpsButton '>HOME</button>
+                    </div>
+                </div> <!-- Main content wrapper-->
+            </div> <!-- Game menu content wrapper -->
+            
+
+            <div id='mainMenu' class='trivia-wrapper'>
+                <div class='menu-wrapper'>
+                    <div class='image-wrapper'>
+                        <img src='../assets/images/rpslogo.png'>
+                    </div>
+                    <h1> Rock Paper Scissors!</h1>
+                    <div class='button-container'>
+                        <button id='playButton' class='button-design'>PLAY</button>
+                        <button id='instructionsButton' class='button-design'>INSTRUCTIONS</button>
+                    </div>
+                    <!--
+                    <button id='playButton' class='button-design'>PLAY</button>
+                    <button id='instructionsButton' class='button-design'>INSTRUCTIONs</button>
+                    -->
+                </div>
+
+            </div> <!-- Trivia wrapper -->
+        </div> <!-- game container -->
+
+    </article>
+
+    <article id='carnival-footer'>
+
+        <div class='footer-content'>
+            <h1> How To Play </h1>
+            <div class='instructions-container'>
+                <p class='instructions-text'>
+                    Play against Chuck in a game of Rock Paper Scissors.<br>
+                    Gain a point for each time you win against Chuck! Be careful,
+                    game is over once chuck beats you 3 times!
+                </p>
+                <p>
+                    Rock beats scissors.<br>
+                    Scissors beats Paper.<br>
+                    Paper beats Rock.<br>
+                </p>
+            </div>
+        </div>
+
+        <div class='catchphrase'>
+            <div class='image-wrapper'>
+                <img src='../assets/images/rsIcon.png'>
+            </div>
+            <p> Always be kind.<br>
+                Always be honest.<br>
+                Always be consistent.
+            </p>
+        </div>
+
+    </article>
+
+    <script src='../assets/js/carnivalUtilities.js'></script>
+    <script src='../assets/js/rps.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+</body>
+</html>

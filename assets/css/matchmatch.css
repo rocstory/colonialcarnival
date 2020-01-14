@@ -1,0 +1,667 @@
+.game-container
+{
+    margin: auto;
+    height: 40em;
+    width: 90%;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 2%;
+    overflow: hidden;
+}
+
+    .trivia-wrapper
+    {
+        height: 100%;
+        padding: 5%;
+    }
+        .trivia-wrapper .button-design
+        {
+            display: inline-block;
+            margin: auto;
+            background: lightgrey;
+            color: #000;
+            border: 4px solid #000;
+            border-radius: 5px;
+            padding: 15px;
+            display: block;
+            width: 30%;
+            font-family: 'Baloo Bhai', Tahoma;
+        }
+            .trivia-wrapper .button-design:hover
+            {
+                background-color: #fff;
+                color: #000;
+                cursor: pointer;
+            }
+
+    #mainMenu
+    {
+        background-color: #93E9BC; /*#0FBAF2;*/
+        display: block;
+    }
+        .menu-wrapper .image-wrapper
+        {
+            display: inline-block;
+            width: 50%;
+        }
+            .image-wrapper img
+            {
+                width: 100%;
+                height: 100%;
+            }
+        .menu-wrapper h1
+        {
+            font-family: 'Baloo Bhai';
+            font-size: 2.8em;
+            margin: 0;
+            color: #ffc125;
+            text-shadow: 3px 3px black;
+        }
+
+        .menu-wrapper .button-container
+        {
+            width: 100%;
+            margin: auto;
+        }
+            .button-container .button-design:hover
+            {
+                background-color: #ffc125;
+                color: #000;
+                
+                cursor: pointer;
+            }
+                #playButton
+                {
+                    margin-bottom: 10px;
+                }
+                #instructionsButton
+                {
+                    margin-top: 20px;
+                }
+        
+
+
+
+    #gameMenu
+    {
+        display: none;
+    }
+
+    #main-content
+    {
+        width: 100%;
+        height: 21em;
+    }
+
+        .block-wrapper
+        {
+            margin: 2em;
+        }
+        .block
+        {
+            
+            display: inline-block;
+            width: 7em;
+            height: 7em;
+            border: 4px solid black;
+            background-color: grey;
+            border-radius: 8%;
+            margin-right: 1em;
+            box-shadow: 4px 4px black;
+        }
+            .block:hover
+            {
+                cursor: pointer;
+                box-shadow: 4px 4px black;
+            }
+            
+            #redBlock
+            {
+                background-color: darkred;
+                
+            }
+                
+                
+            #blueBlock
+            {
+                background-color: darkblue;
+            }
+                
+            
+            #greenBlock
+            {
+                background-color: darkgreen;
+            }
+                
+            #yellowBlock
+            {
+                background-color: goldenrod;
+            }
+                
+        .ingame-button
+        {
+            border: 3px solid black;
+            border-radius: 20%;
+            font-family: 'Baloo Bhai', 'Tahoma';
+            background-color: lightgreen;
+            padding: 2em;
+            margin-top: 3em;
+        }
+            .ingame-button:hover
+            {
+                cursor: pointer;
+            }
+
+            
+            
+
+
+
+
+
+
+
+
+
+    .status-bar
+    {
+        width: 100%;
+        
+    }
+        .status-container
+        {
+            width: 15em;
+            display: inline-block;
+
+            border: 4px solid black;
+            border-radius: 6%;
+            background-color: #ccff99;
+            box-shadow: 2px 2px;
+            
+        }
+            #points-container
+            {
+                background-color: #ccff99;
+            }
+            #attempts-container
+            {
+                background-color: #ff9999;
+            }
+
+                .img-wrapper
+                {
+                    width: 5em;
+                    display: inline-block;
+                    margin-right: 10px;
+                    
+                }
+                    .status-icon
+                    {
+                        font-size: 2em;
+                    }
+                    #points-icon
+                    {
+                        color: green;
+                        text-shadow: 2px 2px black;
+                    }
+                    #attempts-icon
+                    {
+                        color: red;
+                        text-shadow: 2px 2px black;
+
+                    }
+
+                .text-wrapper
+                {
+                    display: inline-block;
+                    font-family: 'Baloo Bhai', Tahoma;
+                    font-size: 2em;
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 2560px) and (min-width: 1401px)
+{
+    .game-container
+    {
+        height: 50em;
+        width: 50%;
+    }
+
+    /* Main Menu  */
+
+        .trivia-wrapper
+        {
+            padding: 0em;
+        }
+
+        .menu-wrapper .image-wrapper
+        {
+            width: 30%;
+        }
+        .menu-wrapper .button-design
+        {
+            width: 50%;
+            font-size: 1.2em;
+        }
+        .menu-wrapper h1
+        {
+            font-size: 4.5em;
+        }
+
+    /* Game menu */
+    .block-wrapper
+    {
+        margin: 0px;
+        width: 100%;
+    }
+        .block
+        {
+            width: 20em;
+            height: 20em;
+        }
+            #redBlock
+            {
+                margin-bottom: 0em;
+            }
+
+        .ingame-button
+        {
+            margin-top: 2em;
+            font-size: 2em;
+            
+        }
+        .status-bar 
+        {
+            margin-top: 15em;
+            height: auto;
+            
+        }
+        #points-container
+        {
+            width: 40em;
+            height: 10em;
+            
+        }
+            #points-container .img-wrapper
+            {
+                width: 8.5em;
+            }
+                #points-container .status-icon
+                {
+                    font-size: 3.6em;
+                }
+            #points-container .text-wrapper
+            {
+                font-size: 3.6em;
+            }
+            
+        
+            .status-container
+            {
+                width: 7.0em;
+            }
+                .img-wrapper
+                {
+                    width: 2.5em;
+                }
+                    .status-icon
+                    {
+                        font-size: 1.6em;
+                    }
+                .text-wrapper
+                {
+                    font-size: 1.6em;
+                }
+    
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1025px)
+{
+    .game-container
+    {
+        height: 40em;
+    }
+
+    /* Main Menu  */
+
+        .menu-wrapper .image-wrapper
+        {
+            width: 30%;
+        }
+        .menu-wrapper .button-design
+        {
+            width: 50%;
+            font-size: 1.2em;
+        }
+        .menu-wrapper h1
+        {
+            font-size: 4.5em;
+        }
+
+    /* Game menu */
+    .block-wrapper
+    {
+        margin: 0px;
+        margin-top: 3em;
+        width: 100%;
+    }
+        .block
+        {
+            width: 12em;
+            height: 12em;
+        }
+            #redBlock
+            {
+                margin-bottom: 0em;
+            }
+
+        .ingame-button
+        {
+            margin-top: 2em;
+            padding: 1em;
+            font-size: 2.0em;
+        }
+    .status-bar
+    {
+        margin: 0em;
+        margin-top: 3em;
+    }
+        
+            
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px)
+{
+    .game-container
+    {
+        height: 30em;
+    }
+    
+    .trivia-wrapper
+    {
+        padding: 0;
+    }
+    /* Main Menu  */
+
+        .menu-wrapper .image-wrapper
+        {
+            width: 30%;
+        }
+        .menu-wrapper .button-design
+        {
+            width: 50%;
+        }
+        .menu-wrapper h1
+        {
+            font-size: 2.5em;
+        }
+
+    /* Game menu */
+    /* Game menu */
+    .block-wrapper
+    {
+        margin: 0px;
+        width: 100%;
+    }
+        .block
+        {
+            width: 8em;
+            height: 8em;
+        }
+            #redBlock
+            {
+                margin-bottom: 0em;
+            }
+
+        .ingame-button
+        {
+            margin-top: 6em;
+        }
+        .status-container
+        {
+            margin-top: 0em;
+            width: 7.0em;
+        }
+            .img-wrapper
+            {
+                width: 2.5em;
+            }
+                .status-icon
+                {
+                    font-size: 1.6em;
+                }
+            .text-wrapper
+            {
+                font-size: 1.6em;
+            }
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px)
+{
+    .game-container
+    {
+        height: 30em;
+    }
+
+    /* Main Menu  */
+
+        .menu-wrapper .image-wrapper
+        {
+            width: 40%;
+        }
+        .menu-wrapper .button-design
+        {
+            width: 50%;
+        }
+        .menu-wrapper h1
+        {
+            font-size: 2.5em;
+        }
+
+    /* Game menu */
+    .block-wrapper
+    {
+        margin: 0px;
+        width: 100%;
+    }
+        .block
+        {
+            width: 8em;
+            height: 8em;
+        }
+            #redBlock
+            {
+                margin-bottom: 0em;
+            }
+
+        .ingame-button
+        {
+            margin-top: 6em;
+        }
+        .status-container
+        {
+            width: 7.0em;
+        }
+            .img-wrapper
+            {
+                width: 2.5em;
+            }
+                .status-icon
+                {
+                    font-size: 1.6em;
+                }
+            .text-wrapper
+            {
+                font-size: 1.6em;
+            }
+            
+        
+            .status-container
+            {
+                width: 7.0em;
+            }
+                .img-wrapper
+                {
+                    width: 2.5em;
+                }
+                    .status-icon
+                    {
+                        font-size: 1.6em;
+                    }
+                .text-wrapper
+                {
+                    font-size: 1.6em;
+                }
+}
+
+@media screen and (max-width: 425px) and (min-width: 400px)
+{
+
+    .game-container
+    {
+        height: 30em;
+    }
+
+    /* Main Menu  */
+
+        .menu-wrapper .image-wrapper
+        {
+            width: 90%;
+        }
+        .menu-wrapper .button-design
+        {
+            width: 50%;
+        }
+        .menu-wrapper h1
+        {
+            font-size: 2.5em;
+        }
+
+    /* Game menu */
+        .block-wrapper
+        {
+            margin: 0px;
+            width: 100%;
+        }
+            .block
+            {
+                width: 8em;
+                height: 8em;
+            }
+                #redBlock
+                {
+                    margin-bottom: 2em;
+                }
+
+        .ingame-button
+        {
+            margin-top: 1em;
+        }
+
+        
+
+            .status-container
+            {
+                width: 7.0em;
+            }
+                .img-wrapper
+                {
+                    width: 2.5em;
+                }
+                    .status-icon
+                    {
+                        font-size: 1.6em;
+                    }
+                .text-wrapper
+                {
+                    font-size: 1.6em;
+                }
+    
+}
+
+@media screen and (max-width: 399px) and (min-width: 100px)
+{
+    .game-container
+    {
+        height: 30em;
+    }
+
+    /* Main Menu  */
+
+        .menu-wrapper .image-wrapper
+        {
+            width: 90%;
+        }
+        .menu-wrapper .button-design
+        {
+            width: 50%;
+        }
+        .menu-wrapper h1
+        {
+            font-size: 2.5em;
+        }
+
+    /* Game menu */
+        .block-wrapper
+        {
+            margin: 0;
+            width: 100%;
+        }
+            .block
+            {
+                width: 8em;
+                height: 8em;
+            }
+                #redBlock
+                {
+                    margin-bottom: 2em;
+                }
+
+        .ingame-button
+        {
+            margin-top: 1em;
+        }
+
+
+
+
+        .trivia-button-wrapper .button-design
+        {
+            width: 40%;
+        }
+            #playButton2, #homeButton
+            {
+                padding: 8px;
+            }
+
+        
+            .status-container
+            {
+                width: 7.0em;
+            }
+                .img-wrapper
+                {
+                    width: 2.5em;
+                }
+                    .status-icon
+                    {
+                        font-size: 1.6em;
+                    }
+                .text-wrapper
+                {
+                    font-size: 1.6em;
+                }
+
+
+}

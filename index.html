@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Colonial Carnival</title>
+    <link rel="stylesheet" href="./assets/css/login_page.css"/>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+    <script src='./assets/js/database.js'></script>
+</head>
+
+<body>
+
+    <div class='main-div' >
+        <img id='logo' class='' src="./assets/images/rsIcon.png">
+        <h3> Colonial Carnival </h3>
+        <input type='Student ID' placeholder='Student ID number...' id='studentID' />
+        <input type="Password " placeholder='Student first name...' id='studentName'/>
+
+        <button onclick='login()'>Login</button>
+    </div>
+    <div class='error-message'>
+        <div class='error-wrapper'>
+            <p id='error-text'>Student name or student ID is invalid. </p>
+        </div>
+
+    </div>
+
+
+    <script src='./assets/js/carnivalUtilities.js'></script>
+    <script src='./assets/js/main.js'></script>
+</body>
+</html>

@@ -1,0 +1,654 @@
+
+
+.game-container
+{
+    margin: auto;
+    height: 40em;
+    width: 90%;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 2%;
+    overflow: hidden;
+}
+    .trivia-wrapper
+    {
+        height: 100%;
+        padding: 5%;
+    }
+
+    #gameMenu
+    {
+        display: none;
+    }
+        #main-content
+        {
+            height: 68%;
+        }
+        .status-bar
+        {
+            width: 100%;
+            
+        }
+            .status-container
+            {
+                width: 15em;
+                display: inline-block;
+
+                border: 4px solid black;
+                border-radius: 6%;
+                background-color: #ccff99;
+                box-shadow: 2px 2px;
+                
+            }
+                #points-container
+                {
+                    background-color: #ccff99;
+                }
+                #attempts-container
+                {
+                    background-color: #ff9999;
+                }
+
+                    .img-wrapper
+                    {
+                        width: 5em;
+                        display: inline-block;
+                        margin-right: 10px;
+                        
+                    }
+                        .status-icon
+                        {
+                            font-size: 2em;
+                        }
+                        #points-icon
+                        {
+                            color: green;
+                            text-shadow: 2px 2px black;
+                        }
+                        #attempts-icon
+                        {
+                            color: red;
+                            text-shadow: 2px 2px black;
+
+                        }
+
+                    .text-wrapper
+                    {
+                        display: inline-block;
+                        font-family: 'Baloo Bhai', Tahoma;
+                        font-size: 2em;
+                    }
+
+        #trivia
+        {
+            display: inline-block;
+            position: relative;
+            margin: auto;
+            top: 0%;
+            height: 80%;
+            width: 100%;
+            border-radius: 2%;
+        }
+            #question-container
+            {
+                display: inline-block;
+                position: relative;
+                width: 100%;
+                height: 40%;
+                margin: auto;
+                background-color: #0FBAF2;
+                border-top-left-radius: 2%;
+                border-top-right-radius: 2%;
+            }
+                #question
+                {
+                    margin: auto;
+                    font-family: 'Baloo Bhai', Tahoma;
+                    padding: 2em;
+                }
+
+            #choices-container
+            {
+                height: 60%;
+            }
+
+                #choices
+                {
+                    display: inline-block;
+                    position: relative;
+                    margin: auto;
+                    width: 100%;
+                    height: 100%;
+                    padding-top: 0em;
+
+                }
+                    #input-wrapper
+                    {
+                        text-align: left;
+                    }
+                        #choices input[type=radio]
+                        {
+                            
+                            border: 0px;
+                            width: 20%;
+                            margin-bottom: 5px;
+                            height: 2em;
+                        }
+                            #choices label
+                            {
+                                font-family: 'Baloo Bhai', Tahoma;
+                                text-align: right;
+                                
+                            }
+
+
+
+    .trivia-wrapper .button-design
+    {
+        display: inline-block;
+        margin: auto;
+        background: lightgrey;
+        color: #000;
+        border: 4px solid #000;
+        border-radius: 5px;
+        padding: 15px;
+        display: block;
+        width: 30%;
+        font-family: 'Baloo Bhai', Tahoma;
+    }
+        .trivia-wrapper .button-design:hover
+        {
+            background-color: #fff;
+            color: #000;
+            cursor: pointer;
+        }
+
+    .trivia-button-wrapper
+    {
+        text-align: center;
+
+    }
+        #submitButton
+        {
+            background: #3DBB3D;
+            display: block;
+        }
+            #submitButton:hover
+            {
+                background-color: #ccff99;
+                transition: 0.5s;
+            }
+        #nextButton
+        {
+            background: #ffc125;
+            display: none;
+        }
+            #nextButton:hover
+            {
+                background-color: #ffe299;
+                transition: 0.5s;
+            }
+        #playButton2, #homeButton
+        {
+            display: none;
+            background-color: #072B5B;
+            color: white;
+            font-size: 1.5em;
+            transition: 0.5s;
+        }
+            #playButton2:hover, #homeButton:hover
+            {
+                
+                background-color: #FA4C05;
+                transition: 0.5s;
+            }
+
+
+    .tool-bar
+    {
+        display: none;
+    }
+        .tool-bar > button
+        {
+            padding: 10px;
+            border: 4px solid black;
+            border-radius: 5px;
+            background-color: yellow;
+            color: black;
+            font-family: 'Baloo Bhai', 'Tahoma';
+        }
+            .tool-bar > button:hover
+            {
+                background-color: red;
+                border: 2px solid black;
+                transition: 3s;
+                cursor: pointer;
+            }
+    #mainMenu
+    {
+        background-color: #0FBAF2;
+        
+    }
+        .menu-wrapper .image-wrapper
+        {
+            display: inline-block;
+            width: 50%;
+        }
+            .image-wrapper img
+            {
+                width: 100%;
+                height: 100%;
+            }
+        .menu-wrapper h1
+        {
+            font-family: 'Baloo Bhai';
+            font-size: 2.8em;
+            margin: 0;
+            color: #ffc125;
+            text-shadow: 3px 3px black;
+        }
+
+        .menu-wrapper .button-container
+        {
+            width: 100%;
+            margin: auto;
+        }
+            .button-container .button-design:hover
+            {
+                background-color: #ffc125;
+                color: #000;
+                
+                cursor: pointer;
+            }
+                #playButton
+                {
+                    margin-bottom: 10px;
+                }
+                #instructionsButton
+                {
+                    margin-top: 20px;
+                }
+
+
+
+@media screen and (max-width: 2560px) and (min-width: 1401px)
+{
+    .game-container
+    {
+        height: 70em;
+    }
+
+    /* Main Menu  */
+
+        .menu-wrapper .image-wrapper
+        {
+            width: 30%;
+        }
+        .menu-wrapper .button-design
+        {
+            width: 50%;
+            font-size: 1.2em;
+        }
+        .menu-wrapper h1
+        {
+            font-size: 4.5em;
+        }
+
+    /* Game menu */
+        #question
+        {
+            font-size: 1.6em;
+        }
+        .trivia-button-wrapper .button-design
+        {
+            width: 40%;
+        }
+            #playButton2, #homeButton
+            {
+                padding: 8px;
+            }
+
+
+        .question-input
+        {
+            font-size: 1.2em;
+        }
+            .input-label
+            {
+                font-size: 1.3em;
+            }
+
+        .status-bar
+        {
+            height: 8em;
+        }
+
+            .status-container
+            {
+                width: 20.0em;
+            }
+                .img-wrapper
+                {
+                    width: 2.5em;
+                }
+                    .status-icon
+                    {
+                        font-size: 1.6em;
+                    }
+                .text-wrapper
+                {
+                    font-size: 1.6em;
+                }
+    
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1025px)
+{
+    .game-container
+    {
+        height: 40em;
+    }
+
+    /* Main Menu  */
+
+        .menu-wrapper .image-wrapper
+        {
+            width: 30%;
+        }
+        .menu-wrapper .button-design
+        {
+            width: 50%;
+            font-size: 1.2em;
+        }
+        .menu-wrapper h1
+        {
+            font-size: 4.5em;
+        }
+
+    /* Game menu */
+        #question
+        {
+            font-size: 1.6em;
+        }
+        .trivia-button-wrapper .button-design
+        {
+            width: 40%;
+        }
+            #playButton2, #homeButton
+            {
+                padding: 8px;
+            }
+
+
+        .question-input
+        {
+            font-size: 1.2em;
+        }
+            .input-label
+            {
+                font-size: 1.3em;
+            }
+
+        .status-bar
+        {
+            height: 8em;
+        }
+
+            .status-container
+            {
+                width: 20.0em;
+            }
+                .img-wrapper
+                {
+                    width: 2.5em;
+                }
+                    .status-icon
+                    {
+                        font-size: 1.6em;
+                    }
+                .text-wrapper
+                {
+                    font-size: 1.6em;
+                }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px)
+{
+    .game-container
+    {
+        height: 30em;
+    }
+
+    /* Main Menu  */
+
+        .menu-wrapper .image-wrapper
+        {
+            width: 30%;
+        }
+        .menu-wrapper .button-design
+        {
+            width: 50%;
+        }
+        .menu-wrapper h1
+        {
+            font-size: 2.5em;
+        }
+
+    /* Game menu */
+        #question
+        {
+            font-size: 1.3em;
+        }
+        .trivia-button-wrapper .button-design
+        {
+            width: 40%;
+        }
+            #playButton2, #homeButton
+            {
+                padding: 8px;
+            }
+
+        .status-bar
+        {
+            height: 8em;
+        }
+
+            .status-container
+            {
+                width: 20.0em;
+            }
+                .img-wrapper
+                {
+                    width: 2.5em;
+                }
+                    .status-icon
+                    {
+                        font-size: 1.6em;
+                    }
+                .text-wrapper
+                {
+                    font-size: 1.6em;
+                }
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px)
+{
+    .game-container
+    {
+        height: 30em;
+    }
+
+    /* Main Menu  */
+
+        .menu-wrapper .image-wrapper
+        {
+            width: 40%;
+        }
+        .menu-wrapper .button-design
+        {
+            width: 50%;
+        }
+        .menu-wrapper h1
+        {
+            font-size: 2.5em;
+        }
+
+    /* Game menu */
+        #question
+        {
+            font-size: 1em;
+        }
+        .trivia-button-wrapper .button-design
+        {
+            width: 40%;
+        }
+            #playButton2, #homeButton
+            {
+                padding: 8px;
+            }
+
+        .status-bar
+        {
+            height: 8em;
+        }
+
+            .status-container
+            {
+                width: 7.0em;
+            }
+                .img-wrapper
+                {
+                    width: 2.5em;
+                }
+                    .status-icon
+                    {
+                        font-size: 1.6em;
+                    }
+                .text-wrapper
+                {
+                    font-size: 1.6em;
+                }
+}
+
+@media screen and (max-width: 425px) and (min-width: 400px)
+{
+
+    .game-container
+    {
+        height: 30em;
+    }
+
+    /* Main Menu  */
+
+        .menu-wrapper .image-wrapper
+        {
+            width: 90%;
+        }
+        .menu-wrapper .button-design
+        {
+            width: 50%;
+        }
+        .menu-wrapper h1
+        {
+            font-size: 2.5em;
+        }
+
+    /* Game menu */
+        #question
+        {
+            font-size: 1em;
+        }
+        .trivia-button-wrapper .button-design
+        {
+            width: 40%;
+        }
+            #playButton2, #homeButton
+            {
+                padding: 8px;
+            }
+
+        .status-bar
+        {
+            height: 8em;
+        }
+
+            .status-container
+            {
+                width: 7.0em;
+            }
+                .img-wrapper
+                {
+                    width: 2.5em;
+                }
+                    .status-icon
+                    {
+                        font-size: 1.6em;
+                    }
+                .text-wrapper
+                {
+                    font-size: 1.6em;
+                }
+    
+}
+
+@media screen and (max-width: 399px) and (min-width: 100px)
+{
+    .game-container
+    {
+        height: 30em;
+    }
+
+    /* Main Menu  */
+
+        .menu-wrapper .image-wrapper
+        {
+            width: 90%;
+        }
+        .menu-wrapper .button-design
+        {
+            width: 50%;
+        }
+        .menu-wrapper h1
+        {
+            font-size: 2.5em;
+        }
+
+    /* Game menu */
+        #question
+        {
+            font-size: 1em;
+        }
+        .trivia-button-wrapper .button-design
+        {
+            width: 40%;
+        }
+            #playButton2, #homeButton
+            {
+                padding: 8px;
+            }
+
+        .status-bar
+        {
+            height: 8em;
+        }
+
+            .status-container
+            {
+                width: 7.0em;
+            }
+                .img-wrapper
+                {
+                    width: 2.5em;
+                }
+                    .status-icon
+                    {
+                        font-size: 1.6em;
+                    }
+                .text-wrapper
+                {
+                    font-size: 1.6em;
+                }
+
+
+}
+                

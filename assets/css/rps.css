@@ -1,0 +1,500 @@
+
+
+.game-container
+{
+    margin: auto;
+    height: 40em;
+    width: 90%;
+    background-color: #34495E;
+    border: 5px solid black;
+    border-radius: 2%;
+    overflow: hidden;
+}
+    .trivia-wrapper
+    {
+        height: 100%;
+        padding: 5%;
+    }
+
+    #gameMenu
+    {
+        display: none;
+    }
+        #main-content
+        {
+            height: 90%;
+        }
+        .points-container
+        {
+            display: inline-block;
+        }
+            .table-design
+            {
+                font-family: 'Baloo Bhai', Tahoma;
+                border-collapse: collapse;
+                width: 19em;
+            }
+
+                td, th
+                {
+                    border: 2px solid #000000;
+                    text-align: center;
+                    padding: 8px;
+                    color: #072B5B;
+                    width: 5em;
+
+                }
+                tr:nth-child(2)
+                {
+                    background-color: #D7DBDD; /*#FA4C05;*/
+                    color: black;
+                    font-size: 1.3em;
+                    text-shadow: 2px 2px grey;
+                }
+                tr:nth-child(1)
+                {
+                    background-color: #072B5B;
+                }
+        .choice-container
+        {
+            position: relative;
+            display: inline-block;
+            top: 2em;
+        }
+            .selection-design
+            {
+                font-family: 'Baloo Bhai', Tahoma;
+                border-collapse: collapse;
+                width: 30em;
+            }
+                .selection-design td, th
+                {
+                    border: 2px solid #0000;
+                    text-align: center;
+                    padding: 8px;
+                    color: white;
+                    width: 6em;
+                    height: 2em;
+                }
+                .selection-design tr:nth-child(1)
+                {
+                    background-color: #283747;
+                }
+                .selection-design tr:nth-child(2)
+                {
+                    background-color: #D7DBDD;
+                    color: black;
+                    font-size: 1.3em;
+                    text-shadow: 2px 2px #000;
+                    height: 5.5em;
+                }
+                    
+                    
+                    #pText, #cText
+                    {
+                        font-size: 1.5em;
+                        color: black;
+
+                    }
+                    #player-choice
+                    {
+                        border: 2px solid black;
+                    }
+        .rpsButton-container
+        {
+            position: relative;
+            top: 3em;
+        }
+            #rpsContainer
+            {
+                display: block;
+            }
+
+            #navContainer
+            {
+                display: none;
+            }
+
+
+
+            .rpsButton
+            {
+                background-color: #D7DBDD;
+                border: 3px solid black;
+                margin-left: 2em;
+                width: 6em;
+                height: 4em;
+                border-radius: 7%;
+                font-size: 1.3em;
+                font-family: 'Baloo Bhai', Tahoma;
+            }
+                .rpsButton:hover
+                {
+                    cursor: pointer;
+                    background-color: orange;
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #mainMenu
+    {
+        background-color: #2E4053;
+        display: 'block';
+        
+    }
+        .menu-wrapper .image-wrapper
+        {
+            display: inline-block;
+            width: 50%;
+        }
+            .image-wrapper img
+            {
+                width: 100%;
+                height: 100%;
+            }
+        .menu-wrapper h1
+        {
+            font-family: 'Baloo Bhai';
+            font-size: 2.8em;
+            margin: 0;
+            color: #FECD50;
+            text-shadow: 3px 3px black;
+        }
+
+        .menu-wrapper .button-container
+        {
+            width: 100%;
+            margin: auto;
+        }
+
+            .button-design
+            {
+                display: inline-block;
+                margin: auto;
+                background: lightgrey;
+                color: #000;
+                border: 4px solid #000;
+                border-radius: 5px;
+                padding: 15px;
+                display: block;
+                width: 30%;
+                font-family: 'Baloo Bhai', Tahoma;
+            }
+
+
+
+
+
+            .button-container .button-design:hover
+            {
+                background-color: #ffc125;
+                color: #000;
+                
+                cursor: pointer;
+            }
+                #playButton
+                {
+                    margin-bottom: 10px;
+                }
+                #instructionsButton
+                {
+                    margin-top: 20px;
+                }
+
+
+
+@media screen and (max-width: 2560px) and (min-width: 1401px)
+{
+    .game-container
+    {
+        height: 70em;
+    }
+
+    /* Main Menu  */
+
+        .menu-wrapper .image-wrapper
+        {
+            width: 90%;
+        }
+        .menu-wrapper .button-design
+        {
+            width: 50%;
+        }
+        .menu-wrapper h1
+        {
+            font-size: 2.5em;
+        }
+
+    /* Game menu */
+    .trivia-wrapper
+    {
+        padding: 4em;
+    }
+    .points-container
+    {
+        top: 0em;
+    }
+    .table-design
+    {
+        width: 25em;
+        height: 4em;
+        font-size: 3em;
+    }
+        .selection-design
+        {
+            width: 32em;
+            height: 10em;
+            font-size: 3em;
+        }
+
+        .rpsButton
+        {
+            display: inline-block;
+            width: 10em;
+            height: 5em;
+            margin-left: 0em;
+            font-size: 3em;
+        }
+
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1025px)
+{
+    .game-container
+    {
+        height: 30em;
+    }
+
+    /* Main Menu  */
+
+        .menu-wrapper .image-wrapper
+        {
+            width: 90%;
+        }
+        .menu-wrapper .button-design
+        {
+            width: 50%;
+        }
+        .menu-wrapper h1
+        {
+            font-size: 2.5em;
+        }
+
+    /* Game menu */
+    .trivia-wrapper
+    {
+        padding: 2em;
+    }
+    .points-container
+    {
+        top: 0em;
+    }
+    .table-design
+    {
+        /*width: 10em;*/
+        font-size: 1.6em;
+        
+    }
+        .selection-design
+        {
+            /*width: 10em;*/
+            font-size: 1.5em;
+        }
+
+        .rpsButton
+        {
+            display: inline-block;
+            width: 8em;
+            height: 5em;
+            margin-left: 0em;
+            font-size: 2em;
+        }
+    
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px)
+{
+    .game-container
+    {
+        height: 30em;
+    }
+
+    /* Main Menu  */
+
+        .menu-wrapper .image-wrapper
+        {
+            width: 90%;
+        }
+        .menu-wrapper .button-design
+        {
+            width: 50%;
+        }
+        .menu-wrapper h1
+        {
+            font-size: 2.5em;
+        }
+
+    /* Game menu */
+
+    .table-design
+    {
+        width: 30em;
+    }
+        .selection-design
+        {
+            width: 30em;
+        }
+
+        .rpsButton
+        {
+            display: inline-block;
+            width: 8em;
+            height: 5em;
+            margin-left: 0em;
+        }
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px)
+{
+    .game-container
+    {
+        height: 30em;
+    }
+
+    /* Main Menu  */
+
+        .menu-wrapper .image-wrapper
+        {
+            width: 90%;
+        }
+        .menu-wrapper .button-design
+        {
+            width: 50%;
+        }
+        .menu-wrapper h1
+        {
+            font-size: 2.5em;
+        }
+
+    /* Game menu */
+
+    .table-design
+    {
+        width: 20em;
+    }
+        .selection-design
+        {
+            width: 30em;
+        }
+
+        .rpsButton
+        {
+            display: inline-block;
+            width: 8em;
+            height: 5em;
+            margin-left: 0em;
+        }
+}
+
+@media screen and (max-width: 425px) and (min-width: 400px)
+{
+
+    .game-container
+    {
+        height: 30em;
+    }
+
+    /* Main Menu  */
+
+        .menu-wrapper .image-wrapper
+        {
+            width: 90%;
+        }
+        .menu-wrapper .button-design
+        {
+            width: 50%;
+        }
+        .menu-wrapper h1
+        {
+            font-size: 2.5em;
+        }
+
+    /* Game menu */
+
+    .table-design
+    {
+        width: 15em;
+    }
+        .selection-design
+        {
+            width: 20em;
+        }
+
+        .rpsButton
+        {
+            display: inline-block;
+            width: 4em;
+            height: 4em;
+            margin-left: 0em;
+            
+        }
+    
+}
+
+@media screen and (max-width: 399px) and (min-width: 100px)
+{
+    .game-container
+    {
+        height: 30em;
+    }
+
+    /* Main Menu  */
+
+        .menu-wrapper .image-wrapper
+        {
+            width: 90%;
+        }
+        .menu-wrapper .button-design
+        {
+            width: 50%;
+        }
+        .menu-wrapper h1
+        {
+            font-size: 2.5em;
+        }
+
+    /* Game menu */
+
+    .table-design
+    {
+        width: 15em;
+    }
+        .selection-design
+        {
+            width: 15em;
+        }
+    .rpsContainer
+    {
+
+    }
+        .rpsButton
+        {
+            display: inline-block;
+            width: 3.7em;
+            height: 4em;
+            margin-left: 0em;
+            
+        }
+
+}
+                
