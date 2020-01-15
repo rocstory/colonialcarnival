@@ -2,10 +2,12 @@
  * Interactable elements.
  */
 var startButton = document.getElementById('startButton');
+var stopButton = document.getElementById('stopButton');
 var redBlock = document.getElementById('redBlock');
 var blueBlock = document.getElementById('blueBlock');
 var greenBlock = document.getElementById('greenBlock');
 var yellowBlock = document.getElementById('yellowBlock');
+
 
 var instructButton = document.getElementById('instructionsButton');
 
@@ -42,9 +44,27 @@ startButton.addEventListener('click', (e) =>{
     on = true;
     if (on || win)
     {
+        stopButton.style.display = 'inline-block';
         play();
+
     }
-})
+});
+
+stopButton.addEventListener('click', (e) =>
+{
+    flashColor();
+    setTimeout(()=>
+    {
+        clearColor();
+        startButton.style.display = 'inline-block';
+        stopButton.style.display = 'none';
+        Points = 0;
+        updatePlayersPoints();
+        clearInterval(intervalId);
+        on = false;
+    }, 800);
+    noise = false;
+});
 
 function play()
 {
@@ -241,11 +261,8 @@ function check()
         // lose an attempt, allow the player to press start again
         setTimeout(() => {
             clearColor();
-            ADD_MARBLES(Points).then(()=>
-            {
-                startButton.style.display = 'inline-block';
-                on = false;
-            })
+            startButton.style.display = 'inline-block';
+            on = false;
         }, 800);
 
         noise = false;
@@ -253,14 +270,18 @@ function check()
 
     if (turn == playerOrder.length && good && !win)
     {
-        turn++;
-        playerOrder = [];
-        compTurn = true;
-        flash = 0;
-        // user gains a point here.
-        Points++;
-        updatePlayersPoints();
-        intervalId = setInterval(gameTurn, 800);
+        ADD_MARBLES(1).then(()=>
+        {
+            turn++;
+            playerOrder = [];
+            compTurn = true;
+            flash = 0;
+            // user gains a point here.
+            Points++;
+            updatePlayersPoints();
+            intervalId = setInterval(gameTurn, 800);
+
+        });
     }
 
 

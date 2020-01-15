@@ -152,6 +152,12 @@
                 cursor: pointer;
             }
 
+            #stopButton
+            {
+                display: none;
+                background-color: orangered;
+            }
+
             
             
 
@@ -537,7 +543,7 @@
 
         .menu-wrapper .image-wrapper
         {
-            width: 90%;
+            width: 60%;
         }
         .menu-wrapper .button-design
         {
