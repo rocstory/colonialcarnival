@@ -293,7 +293,7 @@
     /* Game menu */
     .trivia-wrapper
     {
-        padding: 2em;
+        padding: 0em;
     }
     .points-container
     {
@@ -301,21 +301,23 @@
     }
     .table-design
     {
-        /*width: 10em;*/
-        font-size: 1.6em;
+        width: 20em;
+        height: 5em;
+        font-size: 1em;
         
     }
         .selection-design
         {
             /*width: 10em;*/
+            width: 40em;
             font-size: 1.5em;
         }
 
         .rpsButton
         {
             display: inline-block;
-            width: 8em;
-            height: 5em;
+            width: 5em;
+            height: 3em;
             margin-left: 0em;
             font-size: 2em;
         }
@@ -483,10 +485,6 @@
         {
             width: 15em;
         }
-    .rpsContainer
-    {
-
-    }
         .rpsButton
         {
             display: inline-block;
