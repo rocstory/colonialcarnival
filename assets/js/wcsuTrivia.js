@@ -46,7 +46,11 @@ instructButton.addEventListener('click', (e)=>
 {
     window.location = './wcsuTrivia.html#carnival-footer';
 });
+document.getElementById('homeButton').addEventListener('click', (e)=>
+{
+    window.location.assign('./carnival.html');
 
+})
 
 function startGame()
 {
@@ -80,9 +84,12 @@ function submitAnswer()
     }
     if (correctOption.checked)
     {
-        Points++;
-        pointsText.innerHTML = 'x'+Points;
-        notifyPlayer(true);
+        //Add a marble
+        ADD_MARBLES(1).then((newAmount)=>{
+            Points++;
+            pointsText.innerHTML = 'x'+Points;
+            notifyPlayer(true);
+        })
     }
     else
     {
@@ -91,15 +98,13 @@ function submitAnswer()
         // Game is over!
         if (Attempts <= 0)
         {
-            ADD_MARBLES(Points).then((newAmount)=>{
-                question_heading.innerHTML = "Game over! You've earned " + Points + " marbles!";
-                attemptsText.innerHTML = 'x'+0;
-                submitBtn.style.display = 'none';
-                nextBtn.style.display   = 'none';
-                playButton2.style.display = 'inline-block';
-                homeButton.style.display = 'inline-block ';
-                document.getElementById('marble-amount').innerHTML = 'x'+CURRENT_USER.myMarbles;
-            });
+            question_heading.innerHTML = "Game over! You've earned " + Points + " marbles!";
+            attemptsText.innerHTML = 'x'+0;
+            submitBtn.style.display = 'none';
+            nextBtn.style.display   = 'none';
+            playButton2.style.display = 'inline-block';
+            homeButton.style.display = 'inline-block ';
+            document.getElementById('marble-amount').innerHTML = 'x'+CURRENT_USER.myMarbles;
             return;
         }
         else

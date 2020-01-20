@@ -217,14 +217,14 @@
 {
     .game-container
     {
-        height: 70em;
+        height: 50em;
     }
 
     /* Main Menu  */
 
         .menu-wrapper .image-wrapper
         {
-            width: 90%;
+            width: 50%;
         }
         .menu-wrapper .button-design
         {
@@ -246,22 +246,22 @@
     }
     .table-design
     {
-        width: 25em;
-        height: 4em;
-        font-size: 3em;
+        width: 14em;
+        height: 3em;
+        font-size: 2em;
     }
         .selection-design
         {
-            width: 32em;
-            height: 10em;
-            font-size: 3em;
+            width: 40em;
+            height: 5em;
+            font-size: 2em;
         }
 
         .rpsButton
         {
             display: inline-block;
-            width: 10em;
-            height: 5em;
+            width: 8em;
+            height: 3em;
             margin-left: 0em;
             font-size: 3em;
         }
@@ -279,7 +279,7 @@
 
         .menu-wrapper .image-wrapper
         {
-            width: 90%;
+            width: 30%;
         }
         .menu-wrapper .button-design
         {
