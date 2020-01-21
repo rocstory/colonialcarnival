@@ -182,8 +182,9 @@ function validate_userID(idToValidate)
 {
 
     var isStudentID = /^502\d{5}$/;
+    var isStudentID_B = /^501\d{5}$/;
 
-    if (isStudentID.test(idToValidate))        // If user input matches student ID...
+    if (isStudentID.test(idToValidate) || isStudentID_B.test(idToValidate))        // If user input matches student ID...
     {
         
         return true;
