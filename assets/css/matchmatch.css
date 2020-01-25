@@ -241,7 +241,7 @@
     .game-container
     {
         height: 50em;
-        width: 50%;
+        width: 80em;
     }
 
     /* Main Menu  */
@@ -273,8 +273,8 @@
     }
         .block
         {
-            width: 20em;
-            height: 20em;
+            width: 15em;
+            height: 15em;
         }
             #redBlock
             {
@@ -295,7 +295,7 @@
         }
         #points-container
         {
-            width: 40em;
+            width: 20em;
             height: 10em;
             
         }

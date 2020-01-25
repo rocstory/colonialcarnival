@@ -155,7 +155,7 @@
         .menu-wrapper .image-wrapper
         {
             display: inline-block;
-            width: 50%;
+            width: 4em;
         }
             .image-wrapper img
             {
@@ -335,7 +335,7 @@
 
         .menu-wrapper .image-wrapper
         {
-            width: 90%;
+            width: 20em;
         }
         .menu-wrapper .button-design
         {
