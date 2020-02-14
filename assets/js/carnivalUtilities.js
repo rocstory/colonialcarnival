@@ -251,3 +251,8 @@ function startPage()
     p.innerHTML = 'x' + CURRENT_USER.myMarbles;
 
 };
+
+function goToFooter()
+{
+    window.location = './carnival.html#carnival-footer'; 
+}
