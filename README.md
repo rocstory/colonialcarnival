@@ -4,6 +4,8 @@ Colonial Carnival is a web application designed for students at Western Connecti
 ## Award
 ![alt text](https://github.com/rocstory/colonialcarnival/blob/master/screenshots/program_award.jpg)
 
+I am happy to announce that Colonial Carnival won Program of the Year Award from western Connecticut State University Housing and Residence Life!
+
 ## Tools used
 - HTML, CSS, JavaScript
 - Firebase database
