@@ -1,6 +1,9 @@
 # Colonial Carnival
 Colonial Carnival is a web application designed for students at Western Connecticut State University to play from anywhere! The residential students are able to earn marbles (points) and exchange them for numerous items, from school supplies to gift cards.
 
+## Award
+![alt text](https://github.com/rocstory/colonialcarnival/blob/master/screenshots/program_award.jpg)
+
 ## Tools used
 - HTML, CSS, JavaScript
 - Firebase database
