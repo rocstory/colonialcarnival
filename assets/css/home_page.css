@@ -38,6 +38,32 @@
         }
 
 
+.closing-container
+{
+    margin: auto;
+    width: 80%;
+    height: 20em;
+}
+    #image-container
+    {
+        display: inline-block;
+        width: 13em;
+        height: 13em;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+        #profile_img
+        {
+            display: inline;
+            margin: 0 auto;
+            height: 100%;
+            width: auto; 
+        }
+    #message-container
+    {
+        display: inline-block;
+        width: 50%;
+    }
 
 
 
