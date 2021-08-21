@@ -36,9 +36,14 @@ var CURRENT_USER =
              newName = newName.toLowerCase();
              db.collection('students').doc(CURRENT_USER.myID).update({
                  "name": newName
-             });
-             CURRENT_USER.myName = newName;
-             resolve();
+             })
+             .then(() => { 
+                 CURRENT_USER.myName = newName;
+                 resolve() 
+                })
+             .catch(() => { reject() });
+            //  CURRENT_USER.myName = newName;
+            //  resolve();
          }
          else
          {
